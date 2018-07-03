@@ -10,7 +10,7 @@ SSH passwords are a crime. Let's do identity based access only.
 
 ## How?
 
-Everyone, create a file under `ssh` with your github username, ending in `.keys`. @phanimahesh, for instance, will have `phanimahesh.keys`. The file is in `authorized_keys` format - one public ssh key on each line.
+Everyone who is expected to have ssh access to apinf's dev and testing machines should create a file under `ssh` with their github username, ending in `.keys`. @phanimahesh, for instance, will have `phanimahesh.keys`. The file is in `authorized_keys` format - one public ssh key on each line.
 
 We'll use this as a database-of-identities. When someone needs access to some server, we simply add their keys to the appropriate user account's `authorized_keys`.
 
